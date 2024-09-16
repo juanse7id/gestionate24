@@ -1,5 +1,5 @@
 /// <reference types="Cypress" /> 
-
+import selectors from './selectores/login_select'
 ///hook -> 'it' = prueba individual
 
 it('gestionate',function(){

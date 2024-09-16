@@ -1,5 +1,5 @@
 //selectores de las distintas pantallas
-class selctors{
+class selectors{
 //pantalla login    
     login_select = {
         users : '.mat-mdc-form-field.ng-tns-c1798928316-1 > .mat-mdc-text-field-wrapper > .mat-mdc-form-field-flex',
