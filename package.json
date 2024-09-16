@@ -1,0 +1,19 @@
+{
+  "name": "curso-cypress-24",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "test2": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "devDependencies": {
+    "cypress": "^13.14.2"
+  }
+}
