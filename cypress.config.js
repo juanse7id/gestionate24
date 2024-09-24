@@ -1,6 +1,9 @@
 const { defineConfig } = require("Cypress");
 module.exports = defineConfig({
 
+  viewportWidth:(1366),
+  viewportHeight:(768),
+
   reporter: 'cypress-mochawesome-reporter',
 
   e2e: {
@@ -8,4 +11,4 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
-});
+}); 
