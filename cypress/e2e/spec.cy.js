@@ -1,24 +1,24 @@
 // <reference types="Cypress" /> 
 import selectores from './selectores/selectores';
-import login_select from './selectores/selectores';
-import selectors from './selectores/selectores'
-///hook -> 'it' = prueba individual
-
 describe('login test', () => {
-var misdatos;
+var datosusuarios;
     beforeEach('pass test', () => {
         //la url se encuentra en cypress.config.js
         cy.visit('/'); 
         cy.wait(5000)
         cy.fixture('./users_ok')
-        .then(mis_test => {
-            misdatos = mis_test;
+        .then(login_test => {
+            datosusuarios = login_test;
         });    
     });
 
 it('gestionate',()=>{
-    misdatos.forEach((data) =>{
-        cy.get(selectores.login_select.users).type(data.usuario)
+    datosusuarios.forEach((data) =>{
+        cy.get(selectores.login_select.users).type(data.Usuario)
+        cy.get(selectores.login_select.password).type(data.Password)
+        cy.get(selectores.login_select.btn_iniciar_sesion).click()
+        cy.wait(5000)
+        cy.get(selectores.login_select.btn_logout).click()
     });
     });
 
