@@ -1,12 +1,12 @@
 [{
-    "Usuario": "test.rrhhFAIL",
-    "Password": "Temporada26"
+    "Usuario1": "test.rrhhFAIL",
+    "Password1": "Temporada26"
   },
   {
-    "Usuario": "test.lider",
-    "Password": "Temporada26FAIL"
+    "Usuario2": "test.lider",
+    "Password2": "Temporada26FAIL"
   },
   {
-    "Usuario": "test.colaborador1FAIL",
-    "Password": "Temporada23FAIL"
+    "Usuario3": "test.colaborador1FAIL",
+    "Password3": "Temporada23FAIL"
   }]

@@ -1,6 +1,6 @@
-// <reference types="Cypress" /> 
+//<reference types="Cypress" /> 
 import selectores from './selectores/selectores';
-describe('login test', () => {
+describe('login test ok', () => {
 var datosusuarios;
     beforeEach('pass test', () => {
         //la url se encuentra en cypress.config.js
@@ -14,8 +14,8 @@ var datosusuarios;
 
 it('gestionate',()=>{
     datosusuarios.forEach((data) =>{
-        cy.get(selectores.login_select.users).type(data.Usuario)
-        cy.get(selectores.login_select.password).type(data.Password)
+        cy.get(selectores.login_select.users).click().type(data.Usuario)
+        cy.get(selectores.login_select.password).click().type(data.Password)
         cy.get(selectores.login_select.btn_iniciar_sesion).click()
         cy.wait(5000)
         cy.get(selectores.login_select.btn_logout).click()
@@ -23,5 +23,3 @@ it('gestionate',()=>{
     });
 
 });
-
-//subir cambios
