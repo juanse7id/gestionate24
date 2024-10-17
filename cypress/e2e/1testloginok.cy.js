@@ -1,4 +1,3 @@
-//<reference types="Cypress" /> 
 import selectores from './selectores/selectores';
 describe('login test ok', () => {
 var datosusuarios;
